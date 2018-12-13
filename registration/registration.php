@@ -1,37 +1,30 @@
-
 <?php
-
 session_start();
-
-$con = mysqli_connect('localhost','root','');
-
+header('location:Login.php');
+$con = mysqli_connect('localhost','root','','registration');
 if(!$con){
-    die("db error");
+  die("db error");
 }
-
-mysqli_select_db($con, 'userreg' );
-
-
-if(isset($_POST["send"])){
+if(isset($_POST["submit"])){
+  $username = $_POST["name"];
+  $password = $_POST["password"];
+  if(!empty($username) && !empty($password)){
+    $username = mysqli_real_escape_string($con, $username); 
+    $password = mysqli_real_escape_string($con, $password);
     
-$name = $_POST['user'];
-$pass = $_POST['password'];
-
-$s = " SELECT * FROM UserTable WHERE name ='$name' ";
-
-$result = mysqli_query($con, $s);
-
-$num = mysqli_num_rows($result);
-
-if($num == 1){
-    echo "username already exsists";
-}  
-else{
-    $reg = "insert into UserTable(name , password,) values('$name', '$pass')";
+    $query = "SELECT * FROM usertable WHERE name = '$username'";
+    $result = mysqli_query($con, $query);
     
-    mysqli_query($con, $reg);
-    
-    echo "Registration Successful";
+    if(mysqli_num_rows($result) == 1){
+      echo "Username already taken";
+    } else {
+      $query = "INSERT INTO usertable (name, password) VALUES('$username', '$password')";
+      $result = mysqli_query($con, $query);
+      echo "Registration Successful";
+    }
+  }
+} else {
+  echo "Something went wrong";
 }
-}
+      
 ?>
