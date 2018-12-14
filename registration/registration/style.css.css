@@ -1,0 +1,50 @@
+.jumbotron{
+    background-image: url(jumbo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 200px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    color: aliceblue;
+    
+}
+.my-container{
+    border: 2px solid green;
+    
+    
+}
+
+.recipe-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+recipe-item{
+    
+}
+body{
+    margin: 30px
+}
+
+img {
+    max-width: 100%;
+}
+.my-row{
+    border: 3px solid red;
+}
+.Search{
+    border: 3px solid blue;
+    height: auto;
+    
+}
+.Trending{
+    border: 3px solid blue;
+    height:auto;
+    
+}
+.Search-Box{
+    background-position:top;
+}
