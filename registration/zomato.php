@@ -30,7 +30,7 @@
  
  
  
- <title>Grocery Item</title>
+ <title>Restaurants</title>
 </head>
 
 <body>
@@ -56,7 +56,7 @@
             </li>
             
              <li class="nav-item">
-                <a href="Nearest.php" class="nav-link">Nearest</a>
+                <a href="Nearest.php" class="nav-link">Restaurants</a>
             </li>
             
              <li class="nav-item">

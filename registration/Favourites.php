@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>Favourites</title>
   <meta charset="utf-8">
   
   
@@ -25,10 +25,12 @@
   <link rel="stylesheet" href="style.css.css" type="text/css">
 </head>
 <body>
+   
+   
     
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: aquamarine">
         
-       <a class="navbar-brand" href="#" style="max-width: 30%;">
+       <a class="navbar-brand" href="index.php" style="max-width: 30%;">
             <img src="logo.png" class="img-fluid">InTheKitchen
        </a>
         
@@ -47,7 +49,7 @@
             </li>
             
              <li class="nav-item">
-                <a href="zomato.php" class="nav-link">Nearest</a>
+                <a href="zomato.php" class="nav-link">Restaurants</a>
             </li>
             
              <li class="nav-item">
@@ -64,8 +66,16 @@
     
 
 <div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>Favourites</p> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 </div>
 
 </body>

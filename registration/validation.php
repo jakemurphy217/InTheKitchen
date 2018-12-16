@@ -1,9 +1,8 @@
 <?php
 session_start();
-$con = mysqli_connect('localhost','root','','registration');
-if(!$con){
-  die("db error");
-}
+include_once "./database.php";
+    
+
 if(isset($_POST["submit"])){
  
   $username = $_POST["name"];
@@ -14,10 +13,15 @@ if(isset($_POST["submit"])){
     $password = mysqli_real_escape_string($con, $password);
     
     $query = "SELECT * FROM usertable WHERE name = '$username' && password = '$password'";
-    $result = mysqli_query($con, $query);
+    $result = $db->query($query)->fetchAll();
+      var_dump($result);
   
-    if(mysqli_num_rows($result) == 1){
-      header('location:index.php');
+    if(count($result) == 1) {
+        $user = $result[0];
+        var_dump($user);
+        $_SESSION["user_id"] = 1;
+    
+     // header('location:index.php');
     }else{
        header('location:Login.php');
     }

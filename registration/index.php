@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap 4 Example</title>
+    <title>Home</title>
     <meta charset="utf-8">
 
     <!-- so bootstrap can recongise between a mobile and destop device -->
@@ -25,11 +25,24 @@
 
 </head>
 
-<body>
+<body bgcolor = "black">
+    
+//    <?php
+  //      if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    //        $id = $_POST["recipe_id"];
+            
+    //        $sql = "INSERT INTO favorites ${}"
+      //  }
+    //?>
+    
+
+    
+    
+    
 
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: aquamarine">
 
-        <a class="navbar-brand" href="#" style="max-width: 30%;">
+        <a class="navbar-brand" href="index.php" style="max-width: 30%;">
             <img src="logo.png" class="img-fluid">InTheKitchen
         </a>
 
@@ -48,7 +61,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="zomato.php" class="nav-link">Nearest</a>
+                    <a href="zomato.php" class="nav-link">Restaurants</a>
                 </li>
 
                 <li class="nav-item">
@@ -73,14 +86,14 @@
     </div>
     <div class="container-fluid my-container">
         <div class="row my row">
-            <div class="col-md-8 col-sm-6 Search">
+            <div class="col-md-12 col-sm-12 Search">
 
                 <!--  <div class="input-group mb-3 Search-Box">
                     <input  id="foodie" type="text" class="form-control" placeholder="what food are you craving?" aria-label="search box" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                         
                   -->
-                <div class="input-group mb-3 Search-Box">
+                <div class="input-group col-mb-12 Search-Box">
                     <form class="form">
                         <label>Enter a Post ID</label>
                         <input class="post-id-input" placeholder="what are you feeling?" aria-label="search box" aria-describedby="basic-addon2">
@@ -96,12 +109,21 @@
                 <div class="output"></div>
 
                 <!-- Handlebars template  -->
-                <script id="recipes-template" type="text/x-handlebars-template">
+                <script id="recipes-template"  type="text/x-handlebars-template">
                     <ul class="recipe-list">
                         {{#each recipes}}
                             <li class="recipe">
                             <h2>{{this.title}}</h2>
                             <img src="{{this.image_url}}" />
+                            <h3><u>Description:</u>{{this.source_url}}</h3>
+                            
+                          
+                            <form method="post">
+                               <input name="recipe_id" hidden value="{{this.recipe_id}}"/>
+                                <button type="submit" class="btn btn-primary">Favourite</button>
+                            </form>
+                            
+                            
                             </li>
                             
                         {{/each}}

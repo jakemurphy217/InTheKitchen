@@ -79,7 +79,7 @@ class UI {
       this.resterauntList.innerHTML = "";
       restaurants.forEach((restaurant) => {
         const {
-          thumb: img,
+          photos_url,
           name,
           location: {
             address
@@ -92,14 +92,18 @@ class UI {
           menu_url,
           url
         } = restaurant.restaurant;
+          console.log("RESTER", restaurant)
    if (true) {
-      this.showRestaurant(img, name, address, aggregate_rating, cuisines, cost, menu_url, url);
+      this.showRestaurant(photos_url, name, address, aggregate_rating, cuisines, cost, menu_url, url);
      
     }
       })
 
     }
   }
+
+    
+    
   showRestaurant(img, name, address, aggregate_rating, cuisines, cost, menu_url, url) {
     
     const div = document.createElement('div');
