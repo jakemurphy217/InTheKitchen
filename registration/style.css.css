@@ -52,12 +52,20 @@ recipe-item{
 }
 .post-id-input{
     text-align: center;
+    display:inline-block;
     
 }
 
 .form{
     display: inline-block;
     
+}
+#pic {
+    text-align: center;
+    max-height: 500px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer{

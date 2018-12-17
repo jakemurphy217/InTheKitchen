@@ -1,3 +1,7 @@
+<?php
+session_start();
+include_once "./database.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,18 +62,16 @@
     
     </nav>
 <!-- end of navbar -->    
-    <div class="container my-container">
-        <div class="row my row">
-            <div class="col-md-8 col-sm-6 my-col">
-            row 1 col 1
-            </div>
-            <div class="col-md-4 col-sm-6 my-col">
-            row 1 col 2
-            </div>
-        </div>
-    
-    </div>
-    
+<div class="container my-container">
+
+
+    <img src="profile.png" id="pic">
+    <h1><u>Profile</u></h1>
+    <a href="login.php" class="btn btn-lg btn-success">logout</a>
+
+
+
+</div>
     
     
 
