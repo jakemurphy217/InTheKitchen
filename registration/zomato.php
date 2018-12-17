@@ -39,7 +39,7 @@
 
  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: aquamarine">
         
-       <a class="navbar-brand" href="#" style="max-width: 30%;">
+       <a class="navbar-brand" href="index.php" style="max-width: 30%;">
             <img src="logo.png" class="img-fluid">InTheKitchen
        </a>
         
