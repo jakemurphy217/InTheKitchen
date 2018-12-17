@@ -27,6 +27,8 @@
     
    <!-- my CSS -->
   <link rel="stylesheet" href="Stylezom.css" type="text/css">
+  <link rel="stylesheet" href="style.css.css" type="text/css">
+  
  
  
  
@@ -109,6 +111,7 @@
     </div>
    </div>
  </section>
+ 
 
 
 
@@ -122,6 +125,16 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  <!-- script js -->
  <script src="zomato.js"></script>
+ 
+ <div class="footer fixed-bottom">
+       
+           <div class="container">
+                   <footer>&copy; TeamPear<br/></footer>
+               
+           </div>
+        
+        
+    </div>
 </body>
 
 </html>

@@ -4,6 +4,7 @@ include_once "./database.php";
 
 $error = "";
 
+echo "connected";
 
 if(isset($_POST["submit"])){
   $username = $_POST["name"];

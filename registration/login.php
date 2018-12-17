@@ -9,7 +9,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   $username = $_POST["name"];
   $password = $_POST["password"];
 
-    echo $username;
+    
+    
   
   if(!empty($username) && !empty($password)) { 
     
@@ -80,6 +81,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </div>
+    
+    
+    
 </body>
 
 

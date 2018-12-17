@@ -26,19 +26,20 @@
 </head>
 
 <body>
-    
-//    <?php
+
+    //
+    <?php
   //      if ($_SERVER["REQUEST_METHOD"] == "POST") { 
     //        $id = $_POST["recipe_id"];
             
     //        $sql = "INSERT INTO favorites ${}"
       //  }
     //?>
-    
 
-    
-    
-    
+
+
+
+
 
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: aquamarine">
 
@@ -110,7 +111,7 @@
                 <div class="output"></div>
 
                 <!-- Handlebars template  -->
-                <script id="recipes-template"  type="text/x-handlebars-template">
+                <script id="recipes-template" type="text/x-handlebars-template">
                     <ul class="recipe-list">
                         {{#each recipes}}
                             <li class="recipe">
@@ -141,23 +142,33 @@
         </div>
 
     </div>
+    
+    <div class="footer fixed-bottom">
+       
+           <div class="container">
+                   <footer>&copy; TeamPear<br/></footer>
+               
+           </div>
+        
+        
+    </div>
+    
 
 
 
 
 
-    <!--
+<!--
                               Axios is a librays for sending ajax requests.
                               link to documentaion: https://github.com/axios/axios
                              -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js" charset="utf-8"></script>
-    <!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js" charset="utf-8"></script>
+<!--
                               Handlebars is a client side template engine.
                               link to documentaion:https://handlebarsjs.com/
                              -->
-    <script src="handlebars-379172e.js" charset="utf-8"></script>
-    <script src="SearchAPI.js" charset="utf-8"></script>
-
+<script src="handlebars-379172e.js" charset="utf-8"></script>
+<script src="SearchAPI.js" charset="utf-8"></script>
 
 
 </body>
