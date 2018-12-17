@@ -25,7 +25,7 @@
 
 </head>
 
-<body bgcolor = "black">
+<body>
     
 //    <?php
   //      if ($_SERVER["REQUEST_METHOD"] == "POST") { 
@@ -77,9 +77,10 @@
         <div class="row">
             <div class="col-md-12 jumbotron">
                 <div class="text">
-                    <h1>Hello World</h1>
-                    <p> wewdfd sdfsdfsdfsd sdfsdfsdf sdfsdfsd sdfsdf</p>
-                    <a href="#" class="btn btn-lg btn-success">Click me</a>
+                    <h1>Welcome</h1>
+                    <p> InTheKitchen lets the user search for new recipes and search for resturants nearby</p>
+                    <p>Developed by Team Pear</p>
+                    <a href="#" class="btn btn-lg btn-success">Youtube</a>
                 </div>
             </div>
         </div>
@@ -93,11 +94,11 @@
                         <div class="input-group-append">
                         
                   -->
-                <div class="input-group col-mb-12 Search-Box">
-                    <form class="form">
-                        <label>Enter a Post ID</label>
-                        <input class="post-id-input" placeholder="what are you feeling?" aria-label="search box" aria-describedby="basic-addon2">
-                        <button type="submit" name="button" "btn btn-outline-secondary">Submit</button>
+                <div class="input-group col-mb-6 Search-Box">
+                    <form class="form form-inline md-form me-auto mb-4">
+                        <label></label>
+                        <input class="post-id-input form-control mr-sm-2" type="text" placeholder="what are you feeling?" aria-label="Search" aria-label="Search">
+                        <button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit" name="button" "btn btn-outline-secondary">Search</button>
                     </form>
                     <div class="input-group-append">
 
@@ -113,9 +114,10 @@
                     <ul class="recipe-list">
                         {{#each recipes}}
                             <li class="recipe">
-                            <h2>{{this.title}}</h2>
-                            <img src="{{this.image_url}}" />
-                            <h3><u>Description:</u>{{this.source_url}}</h3>
+                            <h2><u>{{this.title}}</u></h2>
+                            <img   src="{{this.image_url}}" id="food" />
+                            <h3><u>Publisher:</u>{{this.publisher}}</h3>
+                            <h3><u>Description:</u> <a href="{{source_url}}">{{this.source_url}}</a></h3>
                             
                           
                             <form method="post">

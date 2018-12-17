@@ -8,44 +8,54 @@
     color: aliceblue;
     
 }
+body{
+    text-align: center;
+    border: 3px ;
+    margin: 10px;
+    background-color: rgb(219, 255, 243)
+}
+
 .my-container{
-    border: 2px solid green;
-    
-    
+
 }
 
 .recipe-list{
     list-style: none;
     margin: 0;
     padding: 0;
-    
+    text-align: center;
+    border: 2px solid aquamarine;
     
 }
 
 recipe-item{
     
 }
-body{
-    margin: 30px
-}
 
-img {
-    max-width: 250px;
+#food {
+    max-width: 300px;
     max-height: 250px;
+    border: 5px solid black;
+    border-radius: 30px;
+    
 }
 .my-row{
-    border: 3px solid red;
+    
 }
 .Search{
-   
-    
-    
+  
 }
-.Trending{
-    border: 3px solid blue;
-    height:auto;
     
 }
 .Search-Box{
-    background-position:top;
+    
+}
+.post-id-input{
+    text-align: center;
+    
+}
+
+.form{
+    display: inline-block;
+    
 }
