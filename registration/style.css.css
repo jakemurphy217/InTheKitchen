@@ -28,6 +28,11 @@ body{
     
 }
 
+.rounded-circle {
+    max-height: 200px;
+    max-width: 200px;
+}
+
 recipe-item{
     
 }
@@ -39,6 +44,7 @@ recipe-item{
     border-radius: 30px;
     
 }
+
 .my-row{
     
 }

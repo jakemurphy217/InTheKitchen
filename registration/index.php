@@ -66,7 +66,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="Account.php" class="nav-link">Account</a>
+                    <a href="Account.php" class="nav-link">About</a>
+                </li>
+                
+                 <li class="nav-item">
+                    <a href="login.php" class="nav-link">logout</a>
                 </li>
             </ul>
         </div>
