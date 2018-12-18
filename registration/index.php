@@ -125,9 +125,9 @@
                             <h3><u>Description:</u> <a href="{{source_url}}">{{this.source_url}}</a></h3>
                             
                           
-                            <form method="post">
+                            <form action="favfunction.php" method="GET">
                                <input name="recipe_id" hidden value="{{this.recipe_id}}"/>
-                                <button type="submit" class="btn btn-primary">Favourite</button>
+                                <button name="fav" type="submit" class="btn btn-primary">Favourite</button>
                             </form>
                             
                             

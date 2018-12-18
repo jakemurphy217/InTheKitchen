@@ -1,3 +1,23 @@
+<?php
+session_start();
+include_once "./database.php";
+//header('location:Login.php');
+$con = mysqli_connect('localhost','root','','registration');
+if(!$con){
+  die("db error");
+}
+
+$user_id = $_SESSION['user_id'];
+
+$query = "SELECT * FROM favorites WHERE user_id = '$user_id'";
+//$result = mysqli_query($con, $query);
+$result = $db->query($query)->fetchAll();
+
+var_dump($result);
+    
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,6 +90,10 @@
     
 
 <div class="container-fluid">
+ 
+ 
+ 
+ 
  
  
  
